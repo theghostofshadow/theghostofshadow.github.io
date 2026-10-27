@@ -1,0 +1,121 @@
+/*  Universal Selector ကို * နဲ့ ရေးတယ် */
+/* html tag တွေမှန်သမျှကို ပြောင်းပေးတယ် */
+/* တခြား selector တွေ ဝင်လာရင် Universal က နောက်ဆုတ်ပေးတယ် */
+
+/* id တွေကို မတူအောင်ပေးရမယ် */
+
+/* Class Selector က လုပ်ငန်းခွင်မှာ အသုံးအများဆုံး */
+
+/* Class selector က ထပ်ခါထပ်ခါ ခေါ်သုံးလို့ရတယ် (File တစ်ခုတည်း အတွင်းမှာ)
+   Id Selector က မတူအောင်ပေးရမယ် တစ်ခါပဲ ယူသုံးရမယ် */
+
+/* Descendant Selector က id="desc" လို့ .html file မှာပေး .css file မှာ id နဲ့ပေးခဲ့တော့ #desc လို့ခေါ်  a tag တွေကိုပဲ ဖြစ်စေချင်တော့ a{} property တွေထည့် */
+
+/* child selector က .hhtml -> #child 
+.css -> #child> a tag နဲ့ property တွေပေး */
+/* greater than sign ပါဖို့ အထူးလိုအပ်တယ် */
+
+*{
+    color: red;
+    text-align: center;
+}
+
+/* Tag Selector */
+h2{
+color: aqua;
+}
+
+/* Attribute Selector */
+a[
+    title="This is Google"]
+    {color: blueviolet;}
+
+/* Id selector */
+
+#idselector{
+    color: blue;
+    text-indent: 50px;
+    line-height: 25px;
+    word-spacing: 2px;
+    letter-spacing: ;
+    text-transform: ;
+}
+
+/* Class Selector */
+
+.classselector{
+    color: chartreuse;
+    text-transform: capitalize;
+    font-size: 20px;
+    text-indent: 50px;
+    line-height: 30px;
+}
+
+/* Descendant Selector */
+#desc a{
+    color: red;
+}
+
+/* Child Selector */
+#child> a{
+    color: deeppink;
+}
+
+/* : (full colum တွေနဲ့ ရေးရတာ) */
+/* link ရှိမယ်
+   hover ရှိမယ်
+   active ရှိမယ်
+   visited ရှိမယ် */
+
+a:link{
+    color: aqua;
+    text-decoration: none;
+}
+
+/* mouse ရောက်သွားတဲ့ အချိန်မှာ အလုပ်လုပ်တယ် */
+a:hover{
+    color: greenyellow;
+}
+
+/* mouse ကို ဖိပြီး မလွှတ်သေးတဲ့ အချိန်မှာ အလုပ်လုပ်တယ် */
+a:active{
+color: navy;
+}
+
+/* link ထဲကို ဝင်ကြည့်ပြီးသွားရင် ပြောင်းသွားမယ့် အရောင်ပေးတာ */
+a:visited{
+color: black;
+}
+
+p:target{
+    color: aqua;
+    text-transform: uppercase;
+    word-spacing: 20px;
+    line-height: 20px;
+}
+
+#mydata{
+    width: 50%;
+    margin: auto;
+}
+
+input[type="text"]
+{
+width: 300px;
+height: 30px;
+}
+
+/* focus က Cursor ထောက်ပြီး စာရိုက်တဲ့အချိန်မှာ အလုပ်လုပ်တာ */
+input[type="text"]:focus{
+    background-color: blue;
+    color: green;
+}
+
+input[type="radio"]:checked + label{
+    color: red;
+    font-style: italic;
+}
+
+input[type="checkedbox"]:enabled + label{
+    color:brown;
+}

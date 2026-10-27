@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ID & Class Selector</title>
+    <script>
+        alert("CSS Day2")
+    </script>
+    <link rel="stylesheet" href="custom.css">
+</head>
+<body>
+
+<!-- Selector () မျိုး ရှိတယ် -->
+<!-- 1. Universal Selector . နဲ့ရေးတယ်
+     2. Attribute Selector ကကျ ဒီတိုင်း အောက်က highlight စာသားပေါ်ရုံပဲ title attribute နဲ့ ခေါ်ရေး
+     3. Id Selector -> .html->     <id="">၊</>
+        .css -> #id နေရာမှာ ပေးခဲ့တာရေး 
+     4. Class Selector -> .html -> class=" " , .css -> . class=" " နေရာမှာ ရေးခဲ့တဲ့ ကောင်ကိုရေး
+     5. Descendant Selector .html -> id="desc" , .css -> id ပေးခဲ့တာဆိုတော့ #desc tag ခေါ်ရေး
+     6. Child Selector .html -> id="child" , .css -> #child > tag ခေါ်ပြီးရေး 
+     -->
+    
+
+    <h1>CSS Day 2</h1>
+    <h2>Selctor</h2>
+    
+    <!-- Id Selector -->
+    <p id="idselector">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus sapiente totam at accusamus quae dolores deleniti corporis asperiores tempora minus doloremque saepe temporibus iure cumque blanditiis facere, non numquam esse dicta architecto! Temporibus laborum blanditiis error expedita provident, debitis culpa in commodi itaque, porro deleniti magnam velit ducimus iste doloribus.
+    </p>
+
+    <!-- Classselector -->
+    <div class="classselector">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui aspernatur tempore, commodi provident cum temporibus quae sit enim illo pariatur? Unde voluptatem aut ipsa, distinctio nobis quisquam eaque quam quas voluptas incidunt necessitatibus enim aliquam, delectus illum! Repellat fugiat maxime saepe reiciendis, explicabo delectus, iure in facilis atque quia consequuntur.
+    </div>
+   
+    <p id="desc">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. <a href="">Outside</a> In sequi dolorum quisquam odit dolorem aliquid excepturi? Esse, eligendi inventore? <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis a dignissimos tempore tenetur inventore cupiditate et cumque voluptatum repellendus neque, <a href="">Inside</a> aliquid explicabo sint facilis quas amet. Voluptates animi beatae mollitia alias deleniti exercitationem et fugit doloremque tempore laboriosam ad similique, facilis, ipsam neque, quisquam eaque! Omnis voluptates praesentium iure quaerat.</span> Facere, dolore minus. Minus aspernatur temporibus repellat nam esse commodi tempore magni odit doloribus expedita asperiores quos dolore enim, delectus velit sit soluta ut nulla obcaecati voluptate placeat adipisci <a href="">Outside</a>  quaerat dicta.
+    </p>
+
+ <p id="child">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. <a href="">Outside</a> In sequi dolorum quisquam odit dolorem aliquid excepturi? Esse, eligendi inventore? <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis a dignissimos tempore tenetur inventore cupiditate et cumque voluptatum repellendus neque, <a href="">Inside</a> aliquid explicabo sint facilis quas amet. Voluptates animi beatae mollitia alias deleniti exercitationem et fugit doloremque tempore laboriosam ad similique, facilis, ipsam neque, quisquam eaque! Omnis voluptates praesentium iure quaerat.</span> Facere, dolore minus. Minus aspernatur temporibus repellat nam esse commodi tempore magni odit doloribus expedita asperiores quos dolore enim, delectus velit sit soluta ut nulla obcaecati voluptate placeat adipisci <a href="">Outside</a>  quaerat dicta.
+    </p>
+
+    <p id="two">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod in neque voluptatem possimus a, earum veniam. Veniam sit eveniet nemo, consectetur laborum, ab nulla amet temporibus fugit iusto delectus a facilis perferendis omnis maxime nesciunt aliquam quod magni perspiciatis. Temporibus cupiditate nesciunt minima tempore deleniti corrupti aspernatur sequi amet odio?</p>
+
+    <div id="one">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia pariatur delectus, sunt cum autem at esse accusamus, ipsam nisi, quas unde error? Quod reiciendis beatae delectus vitae dolorum eveniet expedita.</div>
+
+    <br>
+
+<a href="https://google.com" title="This is Google" target="_blank" >Google</a>
+<!-- ‌a tag ထဲက title က နာမည်ကို ထောက်လိုက်ရင် ပေါ်လာမယ့် နာမည် -->
+
+<h1>Pseudo Selector</h1>
+
+<a href="https://facebook.com" title="This is Facebook">Facebook</a>
+<a href="https://google.com" title="This is Google">Google</a>
+<a href="https://viber.com" title="This is Viber">Viber</a>
+
+<!-- Target -->
+<a href="#one">Target 1</a>
+<a href="#two">Target 2</a>
+
+<br><br><br>
+
+<div id="mydata">
+<label for="name">Name</label>
+<input type="text" name="name" id="name">
+</div>
+
+<div>
+
+<label for="">Gender</label>
+
+<br>
+
+<input type="radio" name="Gender" value="male" id="male">
+<label for="male">Male</label>
+
+<input type="radio" name="Gender" value="female" id="female">
+<label for="female">Female</label>
+
+</div>
+
+<label for="" text-align="left">Hobby</label>
+
+<br><br>
+
+<div>
+    <input type="checkbox" name="Hobby" value="reading" id="reading" disabled>
+    <label for="reading">Reading</label>
+</div>
+
+
+</body>
+</html>

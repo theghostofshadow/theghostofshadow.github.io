@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+     <form action="" method="get">
+
+        <!-- get method နဲ့ post (အကုန်ဖွက်ပေးတယ်) method ဆိုပြီး ရှိတယ် -->
+        <!-- label ထဲက နာမည်နဲ့ input ထဲက id နဲ့ တူရမယ် -->
+         
+        <label for="name">Name</label>
+        <input type="text" name="StudentName" id="name">
+
+        <br><br>
+        
+        <label for="email">Email</label>
+        <input type="email" name="StudentEmail" id="email">
+
+        <br><br>
+
+        <label for="password">Password</label>
+        <input type="password" name="StudentPassword" id="password">
+
+        <br><br>
+
+        <label for="phone">Phone</label>
+        <input type="number" name="StudentPhone" id="phone">
+
+        <br><br>
+
+        <label for="passport">Passport</label>
+        <input type="file" accept=".jpg,.png" name="StudentPassort" id="passport">
+
+        <br><br>
+
+        <label for="dob">Date of Birth</label>
+        <input type="date" name="StudentBirth" id="dob">
+
+        <br><br>
+
+        <label for="year">Year</label>
+        <select name="StudentYear" id="year">
+            <option value="">Choose Year</option>
+            <option value="1">First Year</option>
+            <option value="2">Second Year</option>
+            <option value="3">Third Year</option>
+
+        </select>
+
+        <br><br>
+
+        <label for="">Gender</label>
+
+        <br><br>
+
+        <input type="radio" name="gender" id="male" value="Male"><label for="male">Male</label>
+
+        <input type="radio" name="gender" id="female" value="Female"><label for="female">Female</label>
+
+        <br><br>
+
+        <label for="">Hobby</label>
+
+        <br><br>
+
+        <input type="checkbox" name="travelling" id="travelling" value="Travelling"><label for="travelling">Travelling</label>
+
+        <input type="checkbox" name="gamming" id="gamming" value="gamming"><label for="gamming">Gamming</label>
+
+         <input type="checkbox" name="reading" id="reading" value="reading"><label for="reading">reading</label>
+
+    <br><br>
+
+    <label for="address">Address</label>
+    <textarea name="StudentAddress" id="address"></textarea>
+
+    <br><br>
+
+    <input type="text" name="city1" value="Yangon">
+    <input type="text" name="city2" value="Mandalay" readonly>
+    <!-- readonly လုပ်ထားရင် ပြင်လို့မရဘူး -->
+    <input type="text" name="" id="" required>
+    <input type="text" name="" id="" placeholder="example@gmail.com">
+    <br><br>
+    <input type="color" name="" id="">
+
+    <br><br>
+
+
+        <!-- button မှာ type က submmit ဖြစ်ရမယ် -->
+        <button type="submit">Save</button>
+
+     </form>
+</body>
+</html>
